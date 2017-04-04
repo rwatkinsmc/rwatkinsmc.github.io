@@ -136,7 +136,7 @@ if (window.PaymentRequest) {
 
 <script>
 document.addEventListener("visibilitychange", function() {
-  document.getElementById('visibility').innerHTML += (" " + document.visibilityState);
+  document.getElementById('visibility').innerHTML += ("<br />" + document.visibilityState);
   console.log( document.visibilityState );
 });
 </script>
