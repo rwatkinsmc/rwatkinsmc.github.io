@@ -16,6 +16,7 @@
   <div id="status"></div>
   <pre id="log"></pre>
 </div>
+<div id="visibility">visibility: </div>
 
 
 <script>/**
@@ -135,6 +136,7 @@ if (window.PaymentRequest) {
 
 <script>
 document.addEventListener("visibilitychange", function() {
+  document.getElementById('visibility').innerHTML += (" " + document.visibilityState);
   console.log( document.visibilityState );
 });
 </script>
